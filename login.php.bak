@@ -1,0 +1,57 @@
+<?php
+include_once("Connection.php");
+
+if(isset($_POST['login'])){
+	$username = $_POST['username'];
+	$password = sha1($_POST['pword']);
+	
+	session_start();
+	
+	$query = $pdo->prepare("SELECT * FROM users WHERE username=:uname AND password =:pword");
+	$query->bindParam(':uname',$username);
+	$query->bindParam(':pword',$password);
+	$query->execute();
+	
+	$bilang = $query->rowCount();
+	
+	if($bilang > 0){
+		while($row = $query->fetch()){
+			$id = $row['userID'];
+			$_SESSION["id"] = $id;
+		}
+		
+	} else {
+		echo "<script>alert('Sorry Wrong Username or Password')</script>";
+		echo "<script>window.open('login.php','_self')</script>";
+	}
+	
+	
+}
+?>
+<html>
+	<head>
+		<title>Insert Data</title>
+	</head>
+	
+	<body>
+	<h1>Login Form</h1>
+	<form action="" method="post">
+	
+		<table>
+			
+			<tr>
+				<td>Username</td>
+				<td><input type="text" name="username" placeholder="Enter your Username" />
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input type="password" name="pword" placeholder="Enter your Password" />
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td><input type="submit" name="login" value="Login"/>
+			</tr>
+		</table>
+	</form>
+	</body>
+</html>

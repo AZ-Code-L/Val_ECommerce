@@ -1,0 +1,82 @@
+body {
+	margin:0;
+	padding:0;
+	background-image:url("images/signinbg.gif");
+	background-color: #cccccc;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+form {
+    width: 900px;
+    height: 450px;
+    border: 2px solid #ccc;
+    padding: 30px;
+
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    text-align: center;
+    font-family: tahoma;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+
+    }
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+td {
+  font-family: arial;
+
+}
+
+input {
+  line-height: 50px;
+  width:300px;
+  margin-top: 10px;
+  border:none;
+}
+
+button {
+  height: 50px;
+  width:300px;
+  border:none;
+
+  background-color: #DF4252;
+  color: black;
+
+  cursor:pointer;
+}
+
+button:hover {
+  background-color: #8F313D;
+}
+
+.table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color:#000000;
+}
+
+.button {
+	position: absolute;
+	right:330px;
+	bottom: 50px;
+}

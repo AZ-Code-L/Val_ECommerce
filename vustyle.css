@@ -1,0 +1,69 @@
+body {
+	margin:0                                                                                                                                                                                                                                                                                                                                                                                                                      ;
+	padding:0;
+	background-image:url("images/valorantbg.png");
+	background-color: #cccccc;
+	background-repeat: no-repeat;
+	background-size: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  height: 50px;
+  width:100%;
+  padding:10px;
+  background-color: #39212C;
+  font-family: times new roman;
+  font-size: 50px;
+  color: white;
+
+}
+
+
+.title {
+
+	 width: 945px;
+	 height: 70px;
+	 left: 450px;
+	 top: 250px;
+	 
+	 font-family: times new roman;
+	 font-style: normal;
+	 font-size: 30px;
+	 line-height: 77px;
+	 text-shadow: 10px black;
+
+		background: linear-gradient(to right, #53212B, white);
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
+  		text-fill-color: transparent;
+  		-webkit-text-fill-color: transparent;
+  		box-shadow: 0 0 0 2px white;
+	
+}
+
+table {
+    background: rgba(255, 255, 255, 0.6);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+	text-align: center;
+	font-family: Arial;
+	color: black;
+}
+
+.head {
+	 width: 945px;
+	 height: 70px;
+	 left: 450px;
+	 top: 250px;
+	 
+	 font-family: Arial;
+	 font-style: normal;
+	 font-size: 20px;
+	 line-height: 77px;	
+	 color: black;
+}
